@@ -118,8 +118,8 @@
   const isOn2 = ref(true);
   const isOn3 = ref(true);
 
-  const dobrze = new Audio('./src/assets/dobrze.mp3');
-  const zle = new Audio('./src/assets/zle.mp3');
+  const dobrze = require('@/assets/dobrze.mp3');
+  const zle = new Audio('@/assets/zle.mp3');
   const przerywnik = new Audio('./src/assets/przerywnik.mp3');
   const adriatica = new Audio('./src/assets/adriatica.mp3')
   const intro1 = new Audio('./src/assets/intro1.mp3');
