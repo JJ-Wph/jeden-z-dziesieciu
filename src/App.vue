@@ -118,23 +118,21 @@
   const isOn2 = ref(true);
   const isOn3 = ref(true);
 
-  const dobrze = new Audio('./src/assets/dobrze.mp3');
-  const zle = new Audio('./src/assets/zle.mp3');
-  const przerywnik = new Audio('./src/assets/przerywnik.mp3');
-  const adriatica = new Audio('./src/assets/adriatica.mp3')
-  const intro1 = new Audio('./src/assets/intro1.mp3');
-  const intro2 = new Audio('./src/assets/intro2.mp3');
+  const dobrze = new Audio(require('./src/assets/dobrze.mp3'));
+  const zle = new Audio(require('./src/assets/zle.mp3'));
+  const przerywnik = new Audio(require('./src/assets/przerywnik.mp3'));
+  const adriatica = new Audio(require('./src/assets/adriatica.mp3'));
+  const intro1 = new Audio(require('./src/assets/intro1.mp3'));
+  const intro2 = new Audio(require('./src/assets/intro2.mp3'));
 
   intro2.playbackRate = 1.25;
 
-  const audio1 = new Audio('./src/assets/pytanie1.mp3');
-  const audio2 = new Audio('./src/assets/pytanie2.mp3');
-  const audio3 = new Audio('./src/assets/pytanie3.mp3');
-  const audio4 = new Audio('./src/assets/pytanie4.mp3');
-  const audio5 = new Audio('./src/assets/pytanie5.mp3');
-  const audio6 = new Audio('./src/assets/pytanie6.mp3');
-
-  document.documentElement.requestFullscreen();
+  const audio1 = new Audio(require('./src/assets/pytanie1.mp3'));
+  const audio2 = new Audio(require('./src/assets/pytanie2.mp3'));
+  const audio3 = new Audio(require('./src/assets/pytanie3.mp3'));
+  const audio4 = new Audio(require('./src/assets/pytanie4.mp3'));
+  const audio5 = new Audio(require('./src/assets/pytanie5.mp3'));
+  const audio6 = new Audio(require('./src/assets/pytanie6.mp3'));
 
   function activateHost() {
     if(password.value === 'wdupetrzaslo') {
